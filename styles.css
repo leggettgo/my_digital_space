@@ -1,0 +1,28 @@
+.nav-links {
+    position: sticky;
+    top: 0;
+    background-color: #ffffff;
+}
+
+.nav-links a {
+    margin-right: 15px;
+    font-size: 16px;
+    text-decoration: none;
+    color: blue;
+    cursor: pointer;
+}
+
+.nav-links a:hover {
+    text-decoration: underline;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    text-align: left;
+    font-size: 0.8em;
+    background-color: #ffffff;
+    padding: 10px;
+}
