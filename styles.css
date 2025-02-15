@@ -18,6 +18,38 @@
     text-decoration: underline;
 }
 
+/* Default (light mode) */
+body {
+    background-color: white;
+    color: black;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+/* Dark mode styles */
+.dark-mode {
+    background-color: black;
+    color: white;
+}
+
+/* Dark mode button */
+#dark-mode-toggle {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    padding: 5px 10px;
+    background-color: #ddd;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+}
+
+.dark-mode #dark-mode-toggle {
+    background-color: #333;
+    color: white;
+}
+
+
 img {
     max-width: 100%;  /* Makes sure the image doesn't exceed its container */
     height: auto;      /* Keeps the aspect ratio */
