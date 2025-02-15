@@ -40,6 +40,11 @@ body {
     color: #ddd;
 }
 
+/* Dark mode navigation links */
+.dark-mode .nav-links a {
+    color: orange; /* Change text color to orange in dark mode */
+}
+
 /* Dark mode button */
 #dark-mode-toggle {
     font-family: "Times New Roman", Times, serif;
@@ -50,7 +55,7 @@ body {
 }
 
 .dark-mode #dark-mode-toggle {
-    color: #c97027; /* Adjusts color in dark mode */
+    color: orange; /* Adjusts color in dark mode */
 }
 
 /* Image Styling */
