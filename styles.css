@@ -42,8 +42,7 @@ body {
 
 /* Dark mode button */
 #dark-mode-toggle {
-    /* background: none; 
-    border: none; */
+    font-family: "Times New Roman", Times, serif;
     color: #222;
     font-size: 16px;
     cursor: pointer;
@@ -51,7 +50,7 @@ body {
 }
 
 .dark-mode #dark-mode-toggle {
-    color: #df8e4b; /* Adjusts color in dark mode */
+    color: #c97027; /* Adjusts color in dark mode */
 }
 
 /* Image Styling */
@@ -81,6 +80,7 @@ footer {
     font-size: 0.8em;
     background-color: #ffffff;
     padding: 10px;
+    transition: background-color 0.3s, color 0.3s;
 }
 
 .dark-mode footer {
