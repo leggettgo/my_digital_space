@@ -26,10 +26,13 @@ img {
 }
 
 .page-title {
-    font-size: clamp(1.8rem, 5vw, 3rem); /* Adjusts between 1.8rem and 3rem based on screen size */
+    font-size: clamp(1.8rem, 5vw, 2.5rem); /* Adjusts between 1.8rem and 3rem based on screen size */
     white-space: nowrap; /* Prevents wrapping */
     overflow: hidden;
     text-overflow: ellipsis;
+}
+
+/* .page-title {
     display: flex;
     justify-content: space-between;
     align-items: center;
