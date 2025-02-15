@@ -38,15 +38,14 @@ body {
 #dark-mode-toggle {
     background: none; /* Removes default button background */
     border: none;
-    color: blue; /* Matches the color of nav links */
+    color: #222;
     font-size: 16px;
-    font-family: Arial, sans-serif;
     cursor: pointer;
     transition: color 0.3s;
 }
 
 .dark-mode #dark-mode-toggle {
-    color: #ddd; /* Adjusts color in dark mode */
+    color: #df8e4b; /* Adjusts color in dark mode */
 }
 
 /* Image Styling */
@@ -68,10 +67,14 @@ img {
 
 /* Footer Styling */
 footer {
-    text-align: center;
-    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    text-align: left;
+    font-size: 0.8em;
     background-color: #ffffff;
-    transition: background-color 0.3s, color 0.3s;
+    padding: 10px;
 }
 
 .dark-mode footer {
