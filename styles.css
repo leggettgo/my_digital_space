@@ -18,11 +18,25 @@
     text-decoration: underline;
 }
 
+img {
+    max-width: 100%;  /* Makes sure the image doesn't exceed its container */
+    height: auto;      /* Keeps the aspect ratio */
+    display: block;    /* Prevents extra space below inline images */
+    margin: 0 auto;    /* Centers the image */
+}
+
 .page-title {
+    font-size: clamp(1.8rem, 5vw, 3rem); /* Adjusts between 1.8rem and 3rem based on screen size */
+    white-space: nowrap; /* Prevents wrapping */
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+/* .page-title {
     display: flex;
     justify-content: space-between;
     align-items: center;
-}
+} *
 
 /* Footer Styling */
 footer {
