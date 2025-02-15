@@ -8,13 +8,13 @@
     <link rel="icon" href="favicon.ico" type="image/x-icon">
 </head>
 <body>
-    <button id="dark-mode-toggle">🌙 Dark Mode</button>
-    <div class="container">
+    <div class="container nav-container">
         <div class="nav-links">
             <a href="/isinthelivingroom">Living Room</a>
             <a href="/isaboutme">About</a>
             <a href="/posts">Posts</a>
         </div>
+        <button id="dark-mode-toggle">🌙 Dark Mode</button>
     </div>
     <div class="container">
         <h1>Alex's Digital Living Room <a href="/isinthelivingroom" class="emoji">🛋️</a></h1>
@@ -31,7 +31,7 @@
         const toggleButton = document.getElementById('dark-mode-toggle');
         const body = document.body;
     
-        // Check for saved dark mode preference
+        // Load dark mode preference
         if (localStorage.getItem('darkMode') === 'enabled') {
             body.classList.add('dark-mode');
             toggleButton.textContent = '☀️ Light Mode';
@@ -48,7 +48,7 @@
                 toggleButton.textContent = '🌙 Dark Mode';
             }
         });
-    </script>    
+    </script>       
 </body>
 </html>
 <footer class="footer">

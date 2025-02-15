@@ -1,11 +1,14 @@
 /* Navigation Bar */
-.nav-links {
-    position: sticky;
-    top: 0;
+.nav-container {
+    display: flex;
+    justify-content: space-between; /* Aligns links to the left and button to the right */
+    align-items: center;
+    padding: 10px;
     background-color: #ffffff;
     margin-top: 20px;
 }
 
+/* Navigation links */
 .nav-links a {
     margin-right: 15px;
     font-size: 16px;
@@ -27,59 +30,60 @@ body {
 
 /* Dark mode styles */
 .dark-mode {
-    background-color: black;
-    color: white;
+    background-color: #222; /* Changed from pure black to dark grey */
+    color: #ddd;
 }
 
 /* Dark mode button */
 #dark-mode-toggle {
-    position: fixed;
-    top: 10px;
-    right: 10px;
-    padding: 5px 10px;
-    background-color: #ddd;
+    background: none; /* Removes default button background */
     border: none;
-    cursor: pointer;
+    color: blue; /* Matches the color of nav links */
     font-size: 16px;
-    border-radius: 5px;
+    font-family: Arial, sans-serif;
+    cursor: pointer;
+    transition: color 0.3s;
 }
 
 .dark-mode #dark-mode-toggle {
-    background-color: #333;
-    color: white;
+    color: #ddd; /* Adjusts color in dark mode */
 }
 
-
+/* Image Styling */
 img {
-    max-width: 100%;  /* Makes sure the image doesn't exceed its container */
-    height: auto;      /* Keeps the aspect ratio */
-    display: block;    /* Prevents extra space below inline images */
-    margin: 0 auto;    /* Centers the image */
+    max-width: 100%; /* Ensures images don't exceed their container */
+    height: auto;
+    display: block;
+    margin: 0 auto; /* Centers images */
 }
 
+/* Page Title */
 .page-title {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    font-size: clamp(1.5rem, 5vw, 2rem); /* Adjusts title font size dynamically */
+    white-space: nowrap; /* Prevents wrapping onto two lines */
 }
 
 /* Footer Styling */
 footer {
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    text-align: left;
-    font-size: 0.8em;
-    background-color: #ffffff;
+    text-align: center;
     padding: 10px;
+    background-color: #ffffff;
+    transition: background-color 0.3s, color 0.3s;
 }
 
-/* Container for centering content */
+.dark-mode footer {
+    background-color: #222;
+    color: #ddd;
+}
+
+/* Container */
 .container {
-    max-width: 600px; /* Set a boundary width */
-    width: 90%; /* Adjusts the width based on the screen size */
-    margin: 0 auto; /* Center the container horizontally */
+    max-width: 600px; /* Keeps content at a readable width */
+    width: 90%;
+    margin: 0 auto;
 }
 
 /* Emoji size adjustment */
