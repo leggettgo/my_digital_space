@@ -6,6 +6,12 @@
     padding: 10px;
     background-color: #ffffff;
     margin-top: 20px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.dark-mode .nav-container {
+    background-color: #222; /* Dark mode background */
+    color: #ddd;
 }
 
 /* Navigation links */
@@ -36,8 +42,8 @@ body {
 
 /* Dark mode button */
 #dark-mode-toggle {
-    background: none; /* Removes default button background */
-    border: none;
+    /* background: none; 
+    border: none; */
     color: #222;
     font-size: 16px;
     cursor: pointer;
