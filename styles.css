@@ -30,9 +30,6 @@ img {
     white-space: nowrap; /* Prevents wrapping */
     overflow: hidden;
     text-overflow: ellipsis;
-}
-
-/* .page-title {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -53,6 +50,7 @@ footer {
 /* Container for centering content */
 .container {
     max-width: 600px; /* Set a boundary width */
+    width: 90%; /* Adjusts the width based on the screen size */
     margin: 0 auto; /* Center the container horizontally */
 }
 
