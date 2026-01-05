@@ -73,12 +73,14 @@ img {
 
 /* Page Title */
 .page-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
     font-size: clamp(1.5rem, 5vw, 2rem); /* Adjusts title font size dynamically */
     word-wrap: break-word;
     overflow-wrap: break-word;
     hyphens: auto;
     max-width: 100%;
-    white-space: normal;
 }
 
 /* Footer Styling */
