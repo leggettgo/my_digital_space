@@ -77,7 +77,10 @@ img {
     justify-content: space-between;
     align-items: center;
     font-size: clamp(1.5rem, 5vw, 2rem); /* Adjusts title font size dynamically */
-    white-space: nowrap; /* Prevents wrapping onto two lines */
+    white-space: normal; /* Allows wrapping for long titles */
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    hyphens: auto;
 }
 
 /* Footer Styling */
